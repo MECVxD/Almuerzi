@@ -119,6 +119,13 @@ const renderOrders = () => {
   document.getElementById("app").innerHTML = ordersView.innerHTML;
   inicializaFormulario();
   inicializaDatos();
+  const logoutbtn = document.getElementById('logout')
+  logoutbtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    localStorage.removeItem('user')
+    localStorage.removeItem('token')
+    renderApp();
+  })
 };
 
 const renderLogin = () => {
