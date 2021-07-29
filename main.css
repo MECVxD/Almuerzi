@@ -4,6 +4,7 @@ body {
 
 #app {
   display: flex;
+  flex-wrap: wrap;
 }
 
 #app div {
